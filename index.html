@@ -1,0 +1,122 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/./assets/img/logo.png">
+    
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="loader">
+        <div class="isiload">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                  <span class="sr-only"></span>
+                </div>
+              </div>
+              <br>
+              <h2>Loading...</h2>
+            <p><span id="randommessage"></span>
+            </p>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top customnavbar" id="navchange" style="padding-top: 15px;padding-bottom: 15px;">
+      <div class="container"><a class="navbar-brand" id="brand-hover" href="#" style="color: rgba(255,255,255,0.9);" target="_top"><strong><i>Segamc</i></strong></a>
+          <button data-toggle="collapse" onclick='console.log("Passed")' class="navbar-toggler btn-gray" data-target="#navtoggle"><i class="fas fa-bars"></i></button>
+          <div class="collapse navbar-collapse" id="navtoggle">
+              <ul class="nav ml-auto navbar-nav">
+                  <li class="nav-item" role="presentation"><a class="nav-link active text-center" id="link-style" href="javascript:store()" style="padding-top: 12px;padding-bottom: 12px;">Store</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link text-center" id="link-style" href="javascript:discord()" style="padding-top: 12px;padding-bottom: 12px;">Discord</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link text-center" id="link-style" href="javascript:vote()" style="padding-top: 12px;padding-bottom: 12px;">Vote</a></li> 
+              </ul>
+      </div>
+      </div>
+  </nav>
+   <div style="background-blend-mode: overlay;background-image: url('assets/img/header.png');background-attachment: fixed;background-size: cover;background-repeat: no-repeat;padding-bottom: 80px;padding-top: 40px;">
+    <div class="text-center" style="margin-top: 90px;">
+                  <img src="/./assets/img/sega.png" style="max-width:280px;">
+                  <br>
+                  <p class="description">All For Fun, Play Now!</p>
+                  <h2 style="font-size: 3em;">
+                    <span class="item">BuildUHC</span>
+                    <span class="item">Sumo</span>
+                    <span class="item">Combo</span>
+                    <span class="item">Snow Rush</span>
+                    <span class="item">No Debuff</span>
+                    <span class="item">Fist</span>
+                  </h2>
+                  <br><br><br><br><br>
+<a class="as" href="minecraft://?addExternalServer=SegaMC|segamc.net:19132" style="text-decoration: none;color:white">Join Now With <span id="playercount">0</span> Players! <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i></a>
+<br><br><br>
+<a style="font-size: 18px;">Click In Server Tab Choose <span id="servername"></span>!</a>
+  </div></div>
+  <section id="link" style="padding-top: 60px;">
+    <div class="text-center">
+        <h1 class="titlee">Welcome To the Sega Network!</h1>
+        <a style="color: gray;" data-aos-once="true" id="section-middle">A not friendly community-based Minecraft (Bedrock Edition) server network </a>
+                    <div class="container" style="padding-top: 50px;">
+                        <div class="row justify-content-center">
+    
+                            
+                            <div class="col-md-4 mb-3">
+                                    <a class="cardlink" href="javascript:store()">
+                                        <h4>Store</h4>
+                                        <p>Unlock Cool Epic Gamings Cosmetic From the Store, some feature and epic update lmao, fly in lobby with liquidbounce.jar</p>
+                            </div></a>
+
+                    <div class="col-md-4 mb-3">
+                        <a class="cardlink" href="javascript:discord()">
+                            <h4>Discord</h4>
+                            <p>Join Our discord server, We have cool comunity and Some Voice Channel to gamings with your friends, we are waiting you to join our discord server</p>
+                </div></a>
+
+                <div class="col-md-4 mb-3">
+                    <a class="cardlink" href="javascript:vote()">
+                        <h4>Vote</h4>
+                        <p>Vote Our Server To get some exclusive cosmetic and epic fly bipas, Free rank to /stop server and helping us to enliven minicref server</p>
+            </div></a>
+    
+                    </div></div></div>
+    </div></section>
+    <section id="discord" style="background-color: #8572da;padding-bottom: 150px;padding-top: 100px;margin-top: 30px;">
+      <h3 class="text-center" style="font-weight: bold;color: rgb(255,255,255);font-size:30px;">Join Our discord server</h3>
+      <p class="text-center" style="margin-top: 20px;color: rgb(255,255,255);">Chat with friends, get news, and updates. <br>Join With <span id="userdiscordonline"></span> other members today</p>
+      <div class="text-center">
+      <image class="discordserver" data-aos="zoom-in-up" src="assets/img/back.png"></image>
+      <br>
+      <button type="button" class="discord-button" onclick="discordinvite()"><i class="fa-brands fa-discord"></i> Click To Join</button>
+     </div>
+      </section>
+      <footer style="background: #2c2b2b;">
+        <div class="container py-4">
+          <div class="justify-content-center">
+            <div class="text-center"><img src="/./assets/img/sega.png" alt="" width="180" class="mb-3">
+              <p class="text-muted">Copyright By &copy;SegaMC<br> We are not afiliated with mojang & sega<br>Website inspiration <a href="https://nethergames.org" style="color: #6c757d;text-decoration: none;">Nethergames</a><br><span id="testserver"></span></p>
+              <ul class="list-inline mt-4">
+                <li class="list-inline-item"><a style="color:#6c757d" href="javascript:twitter()"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a style="color:#6c757d" href="javascript:facebook()"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a style="color:#6c757d" href="javascript:instagram()"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a style="color:#6c757d" href="javascript:store()"><i class="fa-solid fa-store"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:vote()" style="color:#6c757d"><i class="fa-solid fa-check-to-slot"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/97d35ef434.js" crossorigin="anonymous"></script>
+    <script src="/./assets/js/loader.js"></script>
+    <script src="/./assets/js/scroll.js"></script>
+    <script src="/./config.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
